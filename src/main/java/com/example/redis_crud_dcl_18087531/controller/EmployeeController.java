@@ -29,7 +29,7 @@ public class EmployeeController {
         return employeeRepository.findById(id);
     }
 
-    @PutMapping("/employee}")
+    @PutMapping("/employee")
     public void update(@RequestBody Employee employee){
         employeeRepository.update(employee);
     }
